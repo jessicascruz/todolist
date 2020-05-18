@@ -1,0 +1,16 @@
+
+.card {
+  background-color: #ffffff;
+  width: 38%;
+  height: 24rem;
+  border-radius: 12px;
+  box-shadow: 8px 7px 24px black;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
