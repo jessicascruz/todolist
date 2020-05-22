@@ -1,21 +1,17 @@
 <div class="container">
   <div class="card">
-    <form formGroup="this.taskForm">
+
+    <form [formGroup]="taskForm">
       <input type="text" formControlName="task">
-      <button type="submit" (click)="this.adicionar()">+</button>
+      <button type="submit" (keyup.enter)="this.adicionar()" (click)="this.adicionar()">+</button>
     </form>
 
     <ul>
-      <li>
+      <li 
+      *ngFor="let item of this.lista; index as i">
         <label>
-          <input type="checkbox" name="nome" />
-          teste 1
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="checkbox" name="nome" />
-          teste 2
+          <input type="checkbox" name="checkbox" (change)="this.itemConcluido(i)" />
+          {{ item.tarefa }}
         </label>
       </li>
     </ul>
