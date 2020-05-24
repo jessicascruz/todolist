@@ -1,16 +1,25 @@
-
-.card {
-  background-color: #ffffff;
-  width: 38%;
-  height: 24rem;
-  border-radius: 12px;
-  box-shadow: 8px 7px 24px black;
+.btn-menu {
+    width: 100%;
 }
 
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+form {
+    width: 100%;
+}
+
+.list-group {
+    width: 100%;
+}
+
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.sem-tarefas {
+    color: dimgrey;
+    width: 100%;
+}
+
+.card-altura {
+    margin-top: 15%;
 }
